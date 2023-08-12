@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Резюме</title>
- <link rel="stylesheet" href="mainru.css">
+ <link rel="stylesheet" href="main.css">
   </head>
 <body>
  
 <header>
   <b>Юлия Короленок</b>
   <select class="lang">
-          <option value="cv-ru">RU</option>
-          <option value="cv-eng">ENG</option>
+          <option value="scalesapru">RU</option>
+          <option value="scalesapen">ENG</option>
           </select>
 </header>
 <aside>
@@ -83,7 +83,7 @@
             };
             select.addEventListener("change", _ => {
             if(!select.value) return;
-            url = `file:///C:/Users/julia/Desktop/${select.value}.html`;
+            url = `https://scalesap.github.io/${select.value}/`;
             window.location.href = url;
             })
         });
