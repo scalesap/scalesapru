@@ -1,0 +1,83 @@
+.lang {
+    background-color: #1E90FF;
+    text-align: center;
+    font-family: Courier;
+    font-size: 20px;
+    float: right;
+    padding: 7px 20px 7px 20px;
+    margin-right: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+header {
+    font-family: Courier;
+    font-size: 35px;
+    color: #1E90FF;
+    margin-left: 60px;
+}
+.address {
+    list-style-type: none;
+    width: 350px;
+    height: 450px;
+    font-family: Courier;
+    color: black;
+    font-size: 20px;
+    position: fixed;
+}
+.add {
+    list-style-type: none;
+    padding-top: 10px;
+    padding-right: 50px;
+}
+.add li {
+    margin-top: 30px;
+    color: #1E90FF;
+    text-align: center;
+}
+.add p {
+    color: black;
+    text-align: center;
+}
+main {
+    width: 900px;
+    float:right;
+    position: absolute;
+    top: 50px;
+    left: 400px;
+    bottom: 20px;
+    right: 50px;
+}
+.experience {
+    font-family: Courier;
+}
+h1 {
+    text-align: center;
+    font-family: Courier;
+    font-size: 25px;
+    color:black;
+}
+h2 {
+    text-align: center;
+    font-family: Courier;
+    font-size: 25px;
+    color:black;
+}
+h3 {
+    text-align: center;
+    font-family: Courier;
+    font-size: 25px;
+    color:black;
+}
+.skill {
+    font-family: Courier;
+}
+.education {
+    font-family: Courier;
+}
+.course {
+    font-family: Courier;
+}
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме</title>
+ <link rel="stylesheet" href="mainru.css">
+  </head>
+<body>
+ 
+<header>
+  <b>Юлия Короленок</b>
+  <select class="lang">
+          <option value="cv-ru">RU</option>
+          <option value="cv-eng">ENG</option>
+          </select>
+</header>
+<aside>
+   <div class="address">
+    <ul class="add">
+      <li> <img src="email.png" alt="email" width="23" height="23"> ПОЧТА</li>
+   <p> <a href="mailto:julia_korolenok@mail.ru">julia_korolenok@mail.ru</a> </p>
+   <li> <img src="telephone.png" alt="phone" width="21" height="21"> ТЕЛЕФОН</li>
+   <p>+375447077768</p>
+   <li> <img src="link.png" alt="link" width="30" height="30">LINKEDIN</li>
+   <p><a href="https://www.linkedin.com/in/julia-korolionock" target="_blank" >julia korolionock</a><p>
+   </ul>
+  </div>
+</aside>
+<main>
+  <section class="experience">
+    <h1> <b> ОПЫТ РАБОТЫ </b> </h1>
+    <p> <b>  Асессор-тестировщик</b></p>
+    <p>    Яндекс <i>(февраль 2022- н.в.)</i> </p>
+    <ul>
+      <li>Регрессионное тестирование разных продуктов по готовым сценариям</li>
+      <li>Написание баг-репортов</li>
+      <li>Опыт тестирования игр</li>
+      <li>Тестирование на операционных системах Android/iOS</li>
+      <li>Опыт работы с Android Sudio (снятие логов)</li>
+    <li> Тестирование веб-приложений </li>
+    <li> Работа с консолью DevTools, Fiddler</li>
+    </ul>
+
+  </section>
+  <section class="skill">
+    <h2> <b> НАВЫКИ </b> </h2>
+    <ul>
+      <li> Продвинутый пользователь MS Office </li>
+      <li>Владение языками программирования HTML/CSS, Phython</li>
+      <li>Владение Git/GitHub, VS Code, BrowserStack, Postman, Fiddler, Charles, JIRA</li>
+      <li>Аналитические способности</li>
+       <li>Внимательность к деталям</li>
+       <li>Языки: русский, белорусский, английский (<a href="https://www.efset.org/cert/gEj1Gk" target="_blank">B1</a>)</li>
+    </ul>
+  </section>
+  <section class="education">
+    <h3> <b> ОБРАЗОВАНИЕ </b> </h3>
+    <p> <b>БГУФК </b> (2017-2021) </p>
+    <p> <i> Институт менеджмента спорта и туризма </i> </p>
+    <p> Специальность: специалист в сфере туризма </p>
+
+  </section>
+  <section class="course">
+    <h3> <b> КУРСЫ </b> </h3>
+    <p><b>Epam:</b> Automated Testing Foundations (in progress) </p>
+    <p><b>Epam:</b> Software Testing Introduction</p>
+
+
+  </section>
+</main>
+</body>
+<script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const select = document.querySelector(".lang");
+            let url = window.location.href, value;
+            for ({
+                    value
+                } of select.options) {
+                if (value && url.includes(value, 19)) {
+                    select.value = value;
+                }
+            };
+            select.addEventListener("change", _ => {
+            if(!select.value) return;
+            url = `file:///C:/Users/julia/Desktop/${select.value}.html`;
+            window.location.href = url;
+            })
+        });
+    </script>
+</html>
